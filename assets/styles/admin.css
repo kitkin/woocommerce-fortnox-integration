@@ -1,0 +1,124 @@
+@font-face {
+    font-family: 'wetail';
+    src:    url('../fonts/wetail.eot?bb7lu0');
+    src:    url('../fonts/wetail.eot?bb7lu0#iefix') format('embedded-opentype'),
+        url('../fonts/wetail.ttf?bb7lu0') format('truetype'),
+        url('../fonts/wetail.woff?bb7lu0') format('woff'),
+        url('../fonts/wetail.svg?bb7lu0#wetail') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="wetail-icon-"], [class*=" wetail-icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    /*font-family: 'wetail' !important;*/
+    font-family: WooCommerce !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+[class^="wetail-icon-"]:before, [class*=" wetail-icon-"]:before {
+	font-size: 1.4em;
+} 
+
+.wetail-icon-printer:before {
+    content: "\e020";
+}
+.wetail-icon-repeat:before {
+/*    content: "\e058";*/
+	content: "\e009";
+}
+.wetail-icon-check:before {
+    content: "\e116";
+}
+.wetail-icon-cross:before {
+    content: "\e117";
+}
+
+.wetail-fortnox-status {
+	box-sizing: border-box;
+/*	border-width: 1px;
+	border-style: solid;
+	border-radius: 100%;*/
+	display: inline-block;
+	font-size: 12px;
+/*	height: 18px;*/
+	margin: 5px 2px;
+	padding-top: 2px;
+/*	width: 18px;*/
+	text-align: center;
+}
+.wetail-fortnox-status.wetail-icon-check {
+/*	border-color: #77cc6d;*/
+}
+.wetail-fortnox-status.wetail-icon-check:before {
+/*	content: "\e116";*/
+	content: "\e015";
+	color: #77cc6d;	
+}
+.wetail-fortnox-status.wetail-icon-cross {
+/*	border-color: #ffba00;*/
+}
+.wetail-fortnox-status.wetail-icon-cross:before {
+/*	content: "\e117";*/
+	content: "\e033";
+/*	color: #ffba00;	*/
+	color: #999;
+}
+.wetail-icon-repeat {
+	
+}
+.wetail-button {
+	height: 26px;
+	padding: 0 !important;
+	text-align: center;
+	width: 26px;
+}
+
+
+.fortnox-status {
+    background: none;
+    position: relative;
+    display: block;
+}
+.fortnox-status::before {
+    background: none;
+    font-size: 1.4em;
+    font-family: WooCommerce;
+    font-variant: normal;
+    font-weight: 400;
+    left: 0;
+    line-height: 1;
+    position: absolute;
+    text-transform: none;
+    top: 0;
+}
+.fortnox-status.completed::before {
+    content: "\e015";
+    color: #2ea2cc;
+}
+.fortnox-status.not-completed::before {
+    content: "\e013";
+    color: #a00;
+}
+
+.spinner.fortnox-spinner {
+	background-position: left;
+	float: none;
+	vertical-align: top;
+	white-space: nowrap;
+}
+.fortnox-spinner.hero {
+	padding: 8px;
+}
+.column-fortnox .fortnox-spinner {
+	margin-left: 0;
+	width: 90px;
+}
