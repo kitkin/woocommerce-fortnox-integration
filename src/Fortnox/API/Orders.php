@@ -43,7 +43,8 @@ class Orders {
 			'Address2' => $address['address_2'],
 			'ZipCode' => $address['postcode'],
 			'City' => $address['city'],
-			'CountryCode' => $address['country']
+			'CountryCode' => $address['country'],
+			'DeliveryAddress1' => 'ShowMeWhatYouGot'
 		];
 		$vatNumber = get_post_meta( $orderId, 'vat_number', true );
 		$euCountries = [ 'AT', 'BE', 'BG', 'CH', 'CY', 'CZ', 'DE', 'DK', 'EE', 'EL',
